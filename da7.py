@@ -15,6 +15,11 @@ def problem3(aList):
         new_list.append(item)
     return new_list
 
+def problem3v2(aList):
+    new_list =  list(aList * 2)
+    new_list.sort()
+    return new_list
+
 def problem4(list1, list2):
     acc = acc2 = 1
     for item in list1:
@@ -32,5 +37,6 @@ if __name__ == '__main__':
     print(problem1(4))
     print(problem2(5,2,3))
     print(problem3([1,2,3]))
+    print(problem3v2([1,2,3]))
     print(problem4([1,2,3,4,5,6,7,8],[0,4,6,8,10,12,14,16,18,20]))
     print(problem4v2([1,2,3,4,5,6,7,8],[0,4,6,8,10,12,14,16,18,20]))
