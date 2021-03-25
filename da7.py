@@ -16,9 +16,7 @@ def problem3(aList):
     return new_list
 
 def problem3v2(aList):
-    new_list =  list(aList * 2)
-    new_list.sort()
-    return new_list
+    return sorted(aList * 2)
 
 def problem4(list1, list2):
     acc = acc2 = 1
