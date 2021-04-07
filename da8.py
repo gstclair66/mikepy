@@ -20,4 +20,4 @@ def eightBits(n=8):
 if __name__ == '__main__':
     fourBitStrings(10)
     makeStrings(8, 3)
-    eightBits(0)
+    eightBits(256)
