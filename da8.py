@@ -3,7 +3,7 @@ import random
 def fourBitStrings(n: int) -> None:
     with open('fourBits.txt', 'w') as fl:
         for i in range(n):
-            fl.write(format(random.randint(1,16),'04b') + '\n')
+            fl.write(format(random.randint(0,15),'04b') + '\n')
 
 def makeStrings(numbits: int = 4, numstrings: int = 10, fl = 'myFile.txt') -> None:
     with open(fl, 'w') as outfile:
