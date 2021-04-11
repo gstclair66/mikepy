@@ -73,6 +73,7 @@ def xor(string1, string2):
 
 if __name__ == '__main__':
    print(validISBN(9781861972712))
+   print(validISBN('9781861972712'))
    print(calculateCheckDigit(978186197271))
    print(flipBits('11001010'))
    print(xor("1100","1010"))
