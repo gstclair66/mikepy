@@ -39,7 +39,10 @@ def validISBN(n):
         check_digit = int(n[-1])
         relevant_chars = n[:12]
         calc_result = calculateCheckDigit(relevant_chars)
-        return True if calc_result == check_digit else False
+        if calc_result != -99:
+            return True if calc_result == check_digit else False
+        else:
+            return 'bad ISBN format'
    
 def flipBits(myString):
     if len(myString) != 8: return "wrong length"
