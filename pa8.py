@@ -12,7 +12,6 @@ def calculateCheckDigit(n):
     if not len(n) == 12:
         return -99
     else:
-        n = str(n)
         relevant_chars = n[:12]
         calc_result = []
         # if index is even, multiply value by 3 else 1
